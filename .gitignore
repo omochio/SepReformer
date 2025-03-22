@@ -165,3 +165,8 @@ cython_debug/
 
 #vscode
 .vscode/
+
+##### APPENDS #####
+uv.lock
+*.wav
+!sample_wav/sample_WSJ.wav
