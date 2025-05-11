@@ -164,7 +164,11 @@ class Engine(object):
 
         with torch.inference_mode():
             nnet_input = mixture_padded.to(self.device)
-            estim_src, _ = torch.nn.parallel.data_parallel(self.model, nnet_input, device_ids=self.gpuid)
+            # CPU/GPU分岐
+            if torch.cuda.is_available() and self.gpuid:
+                estim_src, _ = torch.nn.parallel.data_parallel(self.model, nnet_input, device_ids=self.gpuid)
+            else:
+                estim_src, _ = self.model(nnet_input)
             mixture = torch.squeeze(mixture).cpu().numpy()
             sf.write(sample[:-4]+'_in.wav', 0.9*mixture/max(abs(mixture)), self.fs)
             for i in range(self.config['model']['num_spks']):

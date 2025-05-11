@@ -32,7 +32,10 @@ def main(args):
     ''' Build Engine '''
     # Call gpu id & device
     gpuid = tuple(map(int, config["engine"]["gpuid"].split(',')))
-    device = torch.device(f'cuda:{gpuid[0]}')
+    if torch.cuda.is_available():
+        device = torch.device(f'cuda:{gpuid[0]}')
+    else:
+        device = torch.device('cpu')
     
     # Call Implement [criterion / optimizer / scheduler]
     criterions = util_implement.CriterionFactory(config["criterion"], device).get_criterions()

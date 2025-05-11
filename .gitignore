@@ -169,4 +169,4 @@ cython_debug/
 ##### APPENDS #####
 uv.lock
 *.wav
-!sample_wav/sample_WSJ.wav
+sample_wav/*
