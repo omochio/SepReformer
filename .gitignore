@@ -168,5 +168,9 @@ cython_debug/
 
 ##### APPENDS #####
 uv.lock
-*.wav
 sample_wav/*
+!sample_wav/sample_WSJ.wav
+data/*
+!data/create_scp
+!data/figure
+models/SepReformer_Base_Libri2Mix/log

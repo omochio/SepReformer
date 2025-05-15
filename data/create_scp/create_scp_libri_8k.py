@@ -1,19 +1,19 @@
 import os
 import argparse
 
-parser = argparse.ArgumentParser(description='Create SCP files for LibriMIX dataset')
-parser.add_argument('--base', type=str, required=True, help='Base path for LibriMIX dataset')
+parser = argparse.ArgumentParser(description='Create SCP files for LibriMix dataset')
+parser.add_argument('--base', type=str, required=True, help='Base path for LibriMix dataset')
 args = parser.parse_args()
 
-librimix_base = args.base
+LIBRIMIX_BASE = args.base
 
 train_mix_scp = 'scp_ss_8k_libri/tr_mix.scp'
 train_s1_scp = 'scp_ss_8k_libri/tr_s1.scp'
 train_s2_scp = 'scp_ss_8k_libri/tr_s2.scp'
 
-train_mix = f'{librimix_base}/train-100/mix_clean'
-train_s1 = f'{librimix_base}/train-100/s1'
-train_s2 = f'{librimix_base}/train-100/s2'
+train_mix = f'{LIBRIMIX_BASE}/train-100/mix_clean'
+train_s1 = f'{LIBRIMIX_BASE}/train-100/s1'
+train_s2 = f'{LIBRIMIX_BASE}/train-100/s2'
 
 tr_mix = open(train_mix_scp,'w')
 for root, dirs, files in os.walk(train_mix):
@@ -40,9 +40,9 @@ test_mix_scp = 'scp_ss_8k_libri/tt_mix.scp'
 test_s1_scp = 'scp_ss_8k_libri/tt_s1.scp'
 test_s2_scp = 'scp_ss_8k_libri/tt_s2.scp'
 
-test_mix = f'{librimix_base}/test/mix_clean'
-test_s1 = f'{librimix_base}/test/s1'
-test_s2 = f'{librimix_base}/test/s2'
+test_mix = f'{LIBRIMIX_BASE}/test/mix_clean'
+test_s1 = f'{LIBRIMIX_BASE}/test/s1'
+test_s2 = f'{LIBRIMIX_BASE}/test/s2'
 
 # test_mix = '/home/nas/user/Uihyeop/DB/wsj0-mix/2speakers/wav8k/min/tt/mix'
 # test_s1 = '/home/nas/user/Uihyeop/DB/wsj0-mix/2speakers/wav8k/min/tt/s1'
@@ -73,9 +73,9 @@ cv_mix_scp = 'scp_ss_8k_libri/cv_mix.scp'
 cv_s1_scp = 'scp_ss_8k_libri/cv_s1.scp'
 cv_s2_scp = 'scp_ss_8k_libri/cv_s2.scp'
 
-cv_mix = f'{librimix_base}/dev/mix_both'
-cv_s1 = f'{librimix_base}/dev/s1'
-cv_s2 = f'{librimix_base}/dev/s2'
+cv_mix = f'{LIBRIMIX_BASE}/dev/mix_both'
+cv_s1 = f'{LIBRIMIX_BASE}/dev/s1'
+cv_s2 = f'{LIBRIMIX_BASE}/dev/s2'
 
 cv_mix_file = open(cv_mix_scp,'w')
 for root, dirs, files in os.walk(cv_mix):
