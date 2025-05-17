@@ -174,3 +174,4 @@ data/*
 !data/create_scp
 !data/figure
 models/SepReformer_Base_Libri2Mix/log
+*.out
