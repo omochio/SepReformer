@@ -135,4 +135,4 @@ config:
         mvn: false
         clip_norm: 5
         start_scheduling: 50
-        test_epochs: [100, 120, 150, 170]
+        test_epochs: [100, 120, 150, 170, 200]
