@@ -21,7 +21,7 @@ config:
             spk2: "tt_s2.scp"
     # ------------------------------------------------------------ #
     dataloader:
-        batch_size: 2
+        batch_size: 1
         pin_memory: true
         num_workers: 12
         drop_last: false
