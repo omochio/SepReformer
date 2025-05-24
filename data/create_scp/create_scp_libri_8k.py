@@ -73,7 +73,7 @@ cv_mix_scp = 'scp_ss_8k_libri/cv_mix.scp'
 cv_s1_scp = 'scp_ss_8k_libri/cv_s1.scp'
 cv_s2_scp = 'scp_ss_8k_libri/cv_s2.scp'
 
-cv_mix = f'{LIBRIMIX_BASE}/dev/mix_both'
+cv_mix = f'{LIBRIMIX_BASE}/dev/mix_clean'
 cv_s1 = f'{LIBRIMIX_BASE}/dev/s1'
 cv_s2 = f'{LIBRIMIX_BASE}/dev/s2'
 
