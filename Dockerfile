@@ -1,7 +1,7 @@
-FROM nvidia/cuda:12.0.0-runtime-ubuntu20.04
+FROM nvidia/cuda:12.8.1-runtime-ubuntu22.04 
 
 # Install uv
-COPY --from=ghcr.io/astral-sh/uv:0.6.14 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 # Set non-interactive installation
 ENV DEBIAN_FRONTEND=noninteractive
