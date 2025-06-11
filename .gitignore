@@ -181,3 +181,5 @@ models/SepReformer_Tiny_Libri2Mix_both_b12/log
 models/SepReformer_Small_Libri2Mix/log
 models/SepReformer_Base_Libri2Mix/log
 *.out
+output/*
+onnx/*
