@@ -176,7 +176,7 @@ data/*
 models/SepReformer_Tiny_Libri2Mix/log
 models/SepReformer_Tiny_Libri2Mix_b4/log
 models/SepReformer_Tiny_Libri2Mix_b4_lr01/log
-models/SepReformer_Tiny_Libri2Mix_both_b16/log
+models/SepReformer_Tiny_Libri2Mix_both_b12/log
 models/SepReformer_Small_Libri2Mix/log
 models/SepReformer_Base_Libri2Mix/log
 *.out
