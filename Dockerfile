@@ -9,4 +9,5 @@ ENV DEBIAN_FRONTEND=noninteractive
 #Update and install basic dependencies including Python
 RUN apt-get update && apt-get install -y \
     git \
+    g++ \
     && rm -rf /var/lib/apt/lists/*
