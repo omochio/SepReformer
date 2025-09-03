@@ -173,6 +173,7 @@ sample_wav/*
 data/*
 !data/create_scp
 !data/figure
+!data/create_silence_files.py
 models/SepReformer_Tiny_Libri2Mix/log
 models/SepReformer_Tiny_Libri2Mix_b4/log
 models/SepReformer_Tiny_Libri2Mix_b4_lr01/log
