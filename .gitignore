@@ -180,6 +180,7 @@ models/SepReformer_Tiny_Libri2Mix_b4_lr01/log
 models/SepReformer_Tiny_Libri2Mix_both_b8/log
 models/SepReformer_Tiny_Libri2Mix_both_b12/log
 models/SepReformer_Tiny_Libri2Mix_both_b4_SplitPached/log
+models/SepReformer_Tiny_Libri12Mix_b4_SplitPached/log
 models/SepReformer_Small_Libri2Mix/log
 models/SepReformer_Base_Libri2Mix/log
 *.out
