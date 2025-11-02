@@ -68,3 +68,7 @@ dependencies = [
     "urllib3==2.2.3",
     "werkzeug==3.0.4",
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["models", "models.*", "utils", "utils.*"]
